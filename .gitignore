@@ -1,0 +1,26 @@
+# 编译产物
+/light-image-proxy
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# 测试二进制文件
+*.test
+
+# 输出的性能分析文件
+*.prof
+
+# IDE文件
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# 日志文件
+*.log
+
+# 环境变量文件
+.env 
