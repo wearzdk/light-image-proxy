@@ -32,10 +32,10 @@ go run main.go -ua="Custom User Agent"
 
 ```bash
 # 运行容器
-docker run -d -p 16524:16524 --name light-image-proxy light-image-proxy
+docker run -d -p 16524:16524 --name light-image-proxy wearzdk/light-image-proxy
 
 # 自定义参数
-docker run -d -p 8080:8080 --name light-image-proxy light-image-proxy -port=8080
+docker run -d -p 8080:8080 --name light-image-proxy wearzdk/light-image-proxy -port=8080
 ```
 
 ## 使用方法

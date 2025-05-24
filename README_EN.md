@@ -32,10 +32,10 @@ go run main.go -ua="Custom User Agent"
 
 ```bash
 # Run container
-docker run -d -p 16524:16524 --name light-image-proxy light-image-proxy
+docker run -d -p 16524:16524 --name light-image-proxy wearzdk/light-image-proxy
 
 # With custom parameters
-docker run -d -p 8080:8080 --name light-image-proxy light-image-proxy -port=8080
+docker run -d -p 8080:8080 --name light-image-proxy wearzdk/light-image-proxy -port=8080
 ```
 
 ## Usage
