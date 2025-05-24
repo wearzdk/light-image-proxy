@@ -2,15 +2,27 @@
 
 A super lightweight image proxy service developed in Go. Designed to solve image loading issues caused by hotlink protection, especially useful when rendering third-party image resources locally.
 
+[中文](./README.md)
+
 ## Features
 
-- 🚀 **Ultra-lightweight**: Low memory footprint, fast startup
+- 🚀 **Ultra-lightweight**: Low memory footprint, small image size
 - 🔄 **Pure forwarding**: No caching, direct request forwarding to source
 - 🛠️ **Customizable**: Support for custom request headers to handle various hotlink protection strategies
 - 🐳 **Containerized**: Dockerfile provided, supports Docker deployment
 - 🌐 **Versatile**: Suitable for various image loading scenarios
 
 ## Quick Start
+
+### Docker Deployment (Recommended)
+
+```bash
+# Run container
+docker run -d -p 16524:16524 --name light-image-proxy wearzdk/light-image-proxy
+
+# With custom parameters
+docker run -d -p 8080:8080 --name light-image-proxy wearzdk/light-image-proxy -port=8080
+```
 
 ### Direct Execution
 
@@ -26,16 +38,6 @@ go run main.go -timeout=30
 
 # Custom User-Agent
 go run main.go -ua="Custom User Agent"
-```
-
-### Docker Deployment
-
-```bash
-# Run container
-docker run -d -p 16524:16524 --name light-image-proxy wearzdk/light-image-proxy
-
-# With custom parameters
-docker run -d -p 8080:8080 --name light-image-proxy wearzdk/light-image-proxy -port=8080
 ```
 
 ## Usage
